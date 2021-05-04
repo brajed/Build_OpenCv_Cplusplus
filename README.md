@@ -1,1 +1,1 @@
-# OpenCv-C-.sh
+# How to build Opencv C++ on UBuntu
