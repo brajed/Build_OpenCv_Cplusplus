@@ -13,3 +13,13 @@ Step 4: Building and Install OpenCv
 Step 5: Find and Set "opencv.pc" file path
 
 Step 6: Check Opencv version
+
+Step 7: Compile and run test.cpp
+
+- Compile code:
+
+  g++ test.cpp -o test -std=c++11 `pkg-config --cflags --libs opencv`
+  
+- Execute code:
+
+  ./test
