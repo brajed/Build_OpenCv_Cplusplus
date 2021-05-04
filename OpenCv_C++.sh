@@ -1,14 +1,16 @@
-#!/usr/bin/bash
-
+#Update Ubuntu system package
 sudo apt-get update && sudo apt-get upgrade
 
+#Install required tools and packages
 sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 
+#Download opencv sources using git
 sudo -s
 cd /opt
 git clone https://github.com/Itseez/opencv.git
 git clone https://github.com/Itseez/opencv_contrib.git
 
+#Build and install opencv
 cd opencv 
 mkdir release
 cd release
@@ -23,7 +25,7 @@ ldconfig
 exit
 cd ~
 
-
+#Find and set "opencv.pc" file path
 ls /usr/local/lib/pkgconfig/
 sudo cp /usr/local/lib/pkgconfig/opencv4.pc  /usr/lib/x86_64-linux-gnu/pkgconfig/opencv.pc
 pkg-config --modversion opencv
