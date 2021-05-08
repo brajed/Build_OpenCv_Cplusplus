@@ -18,7 +18,7 @@ Step 7: Compile and run test.cpp
 
 - Compile code:
 
-  # g++ test.cpp -o test -std=c++11 `pkg-config --cflags --libs opencv`
+  ``` g++ test.cpp -o test -std=c++11 `pkg-config --cflags --libs opencv` ```
   
 - Execute code:
 
