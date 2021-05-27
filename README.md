@@ -1,4 +1,4 @@
-# How to build Opencv C++ on UBuntu
+# How to build Opencv C++ on Ubuntu
 Everyone can install Opencv C++ follow as:
 
 Step 1: Update the ubuntu system packages
