@@ -1,9 +1,9 @@
 #include<iostream>
-#include<opencv/opencv/hpp>
+#include<opencv4/opencv2/opencv.hpp>
 
-int main(int argc, char* argv){
+int main(){
   cv::Mat img;
-  img = cv::imread('lena.jpg', cv::IMREAD_COLOR);
+  img = cv::imread("lena.jpg", cv::IMREAD_COLOR);
   
   if(!img.data){
     std::cout << "Image not found" << std::endl;
